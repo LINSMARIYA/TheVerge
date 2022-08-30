@@ -14,29 +14,118 @@
     </p>
       
   </header>
-  <nav>
-    <div class=" bg-black text-white flex flex-col-2 border-y-2 border-slate-400 justify-center ">
-      <ul class="flex flex-row">
-        <li class="px-5 py-2 flex">TECH <img class=" scale-50" src="./img/expand.png"/></li>
-        <li class="px-5 py-2 flex">REVIEWS <img class=" scale-50" src="./img/expand.png"/></li>
-        <li class="px-5 py-2 flex">SCIENCE <img class=" scale-50" src="./img/expand.png"/></li>
-        <li class="px-5 py-2 flex">CREATORS <img class=" scale-50" src="./img/expand.png"/></li>
-        <li class="px-5 py-2 flex">ENTERTAINMENT<img class=" scale-50" src="./img/expand.png"/></li>
-        <li class="px-5 py-2 flex">VIDEO<li>
-        <li class="px-5 py-2 flex">MORE<img class=" scale-50" src="./img/expand.png"/></li>
+  <nav class=" bg-black text-white overflow-hidden">
+
+    <div class="flex flex-col-1 border-y-2 border-slate-400 justify-center ">
+      <ul class="flex flex-row ">
+        <li class="dropdown  hover:bg-zinc-800 px-2 py-2 flex ">TECH <img class=" scale-50" src="./img/expand.png"/>
+          <div class="dropbtn  grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2">
+            <a>Video</a>
+            <a>Microsoft</a>
+            <a>Cybersecurity</a>
+            <a>Amazon</a>
+            <a>Samsung</a>
+            <a>Mobile</a>
+            <a>Apple</a>
+            <a>Tesla</a>
+            <a>Policy</a>
+            <a>Facebook</a>
+            <a>AI</a>
+            <a>Privacy</a>
+            <a>Google</a>
+            <a>Cars</a>
+            <a>Scooters</a>
+            <hr class=" col-span-3"/>
+            <a class=" col-span-3">ALL TECH</a>
+          </div>
+        </li>
+        <li class="px-2 py-2 flex hover:bg-zinc-800">REVIEWS <img class=" scale-50" src="./img/expand.png"/>
+          <div class="dropbtn  grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2">
+            <a>Phones</a>
+              <a>Tablets</a>
+              <a>Accessories</a>
+              <a>Laptop</a>
+              <a>Smartwatches</a>
+              <a>Buying Guides</a>
+              <a>Headphones</a>
+              <a>Speakers</a>
+              <a>How-tos</a>
+              <a>Cameras</a>
+              <a>Drones</a>
+              <a>Deals</a>  
+              <hr class=" col-span-3"/>
+              <a class=" col-span-3">MORE FROM VERGE REVIEWS</a>
+          </div>
+        <li class="px-2 py-2 flex hover:bg-zinc-800">SCIENCE <img class=" scale-50" src="./img/expand.png"/>
+          <div class="dropbtn  grid grid-cols-2 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2">
+            <a>Video</a>
+              <a>Health</a>
+              <a>Space</a>
+              <a>Energy</a>
+              <a>Nasa</a>
+              <a>Environment</a>
+              <a>spaceX</a>
+              <hr class=" col-span-3"/>
+             <a>ALL SCIENCE</a>
+          </div>
+          
+        </li>
+        <li class="px-2 py-2 flex hover:bg-zinc-800">CREATORS <img class=" scale-50" src="./img/expand.png"/>
+          <div class="dropbtn  grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2">
+              <a>Youtube</a>
+              <a>Kicstarter</a>
+              <a>Cameras</a>
+              <a>Instagram</a>
+              <a>Tumblr</a>
+              <a>Photography</a>
+              <a>Adobe</a>
+              <a>Art Club</a>
+              <a>What's in your bag</a>
+              <hr class=" col-span-3"/>
+              <a class=" col-span-3">ALL CREATORS</a>
+          </div>
+        </li>
+        <li class="px-2 py-2 flex hover:bg-zinc-800">ENTERTAINMENT<img class=" scale-50" src="./img/expand.png"/>
+          <div class="dropbtn  grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2">
+            <a>Film</a>
+            <a>Fortnite</a>
+            <a>Comics</a>
+            <a>TV</a>
+            <a>Game of Thrones</a>
+            <a>Music</a>
+            <a>Games</a>
+            <a>Books</a>
+            <hr class=" col-span-3"/>
+            <a class=" col-span-3">ALL ENTERTAINMENT</a>  
+          </div>
+        </li>
+        <li class="px-2 py-2 flex ">VIDEO<li>
+          <li class="px-2 py-2 flex ">FEATURES<li>
+            <li class="px-2 py-2 flex ">PODCASTS<li>
+        <li class="px-2 py-2 flex hover:bg-zinc-800">MORE<img class=" scale-50" src="./img/expand.png"/>
+          <div class="dropbtn  grid grid-cols-1 gap-3 dropbtn bg-zinc-800 px-5 py-2 mt-9 absolute text-xs -ml-2">
+              <a>NEWSLETTERS</a>
+              <a>MERCH STORE</a>  
+          </div>
+        </li>
       </ul>
       <ul class="flex flex-row items-center mr-5">
         <li><img class=" w-4 mx-1" src="./img/icons8-facebook-f-24.png"/></li>
         <li><img class=" w-6 mx-1" src="./img/twitter.png"/></li>
         <li><img class=" w-4 mx-1" src="./img/rss.png"/></li>  
       </ul>
-      <ul class="flex flex-row items-center">
-        <li><img class=" w-4 mx-2" src="./img/person.png"/></li>
+      <ul class="flex items-center  hover:bg-zinc-800">
+        <li class=" "><img class=" w-4 mx-2  hover:bg-zinc-800" src="./img/person.png"/>
+          <div class="dropbtn  grid grid-cols-1 gap-3 dropbtn bg-zinc-800 p-5  absolute text-xs -ml-20 mt-3">
+            <a class="grid justify-self-center p-2">Login</a>
+            <hr class=" col-span-3"/>
+            <a>Sign Up</a>  
+        </div>
+        </li>
+      </ul>
+        <ul class="flex items-center  hover:bg-zinc-800">
         <li><img class=" w-5 mx-2" src="./img/search.png" /></li>
       </ul>
-    </div>
-    <div>
-      
     </div>
   </nav>
  

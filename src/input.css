@@ -5,3 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.dropbtn{
+    display: none;
+  
+}
+li:hover .dropbtn{
+    display: grid;
+}
