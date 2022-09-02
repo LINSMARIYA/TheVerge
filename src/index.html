@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../dist/output.css" rel="stylesheet" />
+    <script src="./script.js"></script> 
   </head>
 
-  <body class="bg-black">
+  <body class="bg-black sm:overflow-auto ">
     <div
       class="md:bg-bw-pattern bg-cover bg-no-repeat md:h-72 flex md:items-center items-start flex-col p-5 md:p-10 bg-black"
     >
@@ -23,9 +24,9 @@
     </div>
 
     <nav class="bg-black text-white">
-      <div class="flex border border-b-2 border-zinc-800 sm:justify-center">
+      <div class="sm:flex border sm:border-b border-zinc-800 sm:justify-center hidden">
         <ul class="flex">
-          <li class="dropdown hover:bg-zinc-800 px-2 py-2 sm:flex hidden">
+          <li class=" hover:bg-zinc-800 px-2 py-2 sm:flex hidden">
             TECH <img class="scale-50" src="./img/expand.png" />
             <div
               class="dropbtn grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2"
@@ -127,7 +128,7 @@
           <li class="px-2 py-2 lg:flex sm:hidden hidden">VIDEO</li>
           <li class="px-2 py-2 lg:flex sm:hidden xl:block hidden">FEATURES</li>
           <li class="px-2 py-2 lg:flex sm:hidden xl:block hidden">PODCASTS</li>
-          <li class="px-2 py-2 hover:bg-zinc-800 sm:flex hidden">
+          <li class="px-2 py-2 hover:bg-zinc-800 sm:flex hidden" >
             MORE<img class="scale-50" src="./img/expand.png" />
             <div
               class="dropbtn grid grid-cols-1 gap-3 dropbtn bg-zinc-800 px-5 py-2 mt-9 absolute text-xs -ml-2"
@@ -161,12 +162,12 @@
         </ul>
       </div>
 
-      <div class="border border-b-2 border-zinc-800 sm:hidden">
+      <div class="border-b-2 border-zinc-800 sm:hidden">
         <ul class="flex text-white">
-          <li class="flex hover:bg-zinc-700 justify-center w-1/3">
+          <li class="flex hover:bg-zinc-700 justify-center w-1/3" onclick="onClickDrop()">
             TECH<img class="scale-50" src="./img/expand.png" />
             <div
-              class="dropbtn absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7"
+              class="myDropDown absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7" 
             >
               <ul>
                 <li class="p-2 border-b-2 border-b-zinc-700">Video</li>
@@ -189,12 +190,12 @@
             </div>
           </li>
           <li
-            class="flex hover:bg-zinc-700 w-1/3 justify-center border-l-2 border-l-zinc-700"
+            class="flex hover:bg-zinc-700 w-1/3 justify-center border-l border-l-zinc-700" onclick="scrollStop()"
           >
             SCIENCE<img class="scale-50" src="./img/expand.png" />
             <div
               class="dropbtn absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7"
-            >
+              >
               <ul>
                 <li class="p-2 border-b-2 border-b-zinc-700">Video</li>
                 <li class="p-2 border-b-2 border-b-zinc-700">Health</li>
@@ -208,20 +209,38 @@
             </div>
           </li>
           <li
-            class="flex hover:bg-zinc-700 w-1/3 justify-center border-l-2 border-l-zinc-700"
+            class="flex hover:bg-zinc-700 w-1/3 justify-center border-l border-l-zinc-700" onclick="scrollStop()" 
           >
             MORE<img class="scale-50" src="./img/expand.png" />
             <div
-              class="dropbtn absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7"
+              class="myDropDown absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7"
             >
               <ul>
                 <li
-                  class="flex p-2 border-b-2 border-b-zinc-700 place-items-center"
+                  class="p-2 border-b-2 border-b-zinc-700 "
                 >
-                  REVIEWS<img class="scale-50" src="./img/expand.png" />
+                  <div class="dropbtn flex place-items-center">REVIEWS<img class="scale-50" src="./img/expand.png" /></div>
+                  <div class="">
+                    <ul class="">
+                    <li class="p-2 border-b border-b-zinc-700">Phones</li>
+                    <li class="p-2 border-b border-b-zinc-700">Tablets</li>
+                    <li class="p-2 border-b border-b-zinc-700">Accessories</li>
+                    <li class="p-2 border-b border-b-zinc-700">Laptop</li>
+                    <li class="p-2 border-b border-b-zinc-700">Smartwatches</li>
+                    <li class="p-2 border-b border-b-zinc-700">Buying Guides</li>
+                    <li class="p-2 border-b border-b-zinc-700">Video</li>
+                    <li class="p-2 border-b border-b-zinc-700">Health</li>
+                    <li class="p-2 border-b border-b-zinc-700">Space</li>
+                    <li class="p-2 border-b border-b-zinc-700">Energy</li>
+                    <li class="p-2 border-b border-b-zinc-700">Nasa</li>
+                    <li class="p-2 border-b border-b-zinc-700">Environment</li>
+                    <li class="p-2 border-b border-b-zinc-700">spaceX</li>
+                    <li class="p-2 ">MORE FROM VERGE REVIEWS</li>
+                  </ul>
+                  </div>
                 </li>
                 <li
-                  class="flex p-2 border-b-2 border-b-zinc-700 place-items-center"
+                  class="flex p-2 border-b border-b-zinc-700 place-items-center"
                 >
                   CREATORS<img class="scale-50" src="./img/expand.png" />
                 </li>
@@ -230,10 +249,10 @@
                 >
                   ENTERTAINMENT<img class="scale-50" src="./img/expand.png" />
                 </li>
-                <li class="p-2 border-b-2 border-b-zinc-700">FEATURES</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">PODCASTS</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">NEWSLETTERS</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">MERCH STORE</li>
+                <li class="p-2 border-b border-b-zinc-700">FEATURES</li>
+                <li class="p-2 border-b border-b-zinc-700">PODCASTS</li>
+                <li class="p-2 border-b border-b-zinc-700">NEWSLETTERS</li>
+                <li class="p-2 border-b border-b-zinc-700">MERCH STORE</li>
               </ul>
             </div>
           </li>
