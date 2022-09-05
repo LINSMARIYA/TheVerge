@@ -7,13 +7,13 @@
     <script src="./script.js"></script> 
   </head>
 
-  <body class="bg-black sm:overflow-auto ">
+  <body class="bg-black  ">
     <div
       class="md:bg-bw-pattern bg-cover bg-no-repeat md:h-72 flex md:items-center items-start flex-col p-5 md:p-10 bg-black"
     >
     <div class="flex w-full place-content-between sm:justify-center">
       <img class="md:h-auto lg:max-h-40 h-8 w-1/2 left-0" src="../src/img/theverge.png" />
-      <img class="w-4 mx-2 hover:bg-zinc-800 sm:hidden right-0" src="./img/person.png" />
+      <img class="w-5 h-5 mx-2 hover:bg-zinc-800 sm:hidden right-0" src="./img/person.png" />
     </div>
       <p
         class="font-sans text-sm text-white text-center mt-5 hidden h-0 md:block md:h-auto"
@@ -29,7 +29,7 @@
           <li class=" hover:bg-zinc-800 px-2 py-2 sm:flex hidden">
             TECH <img class="scale-50" src="./img/expand.png" />
             <div
-              class="dropbtn grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2"
+              class=" grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2 " 
             >
               <a>Video</a>
               <a>Microsoft</a>
@@ -164,12 +164,13 @@
 
       <div class="border-b-2 border-zinc-800 sm:hidden">
         <ul class="flex text-white">
-          <li class="flex hover:bg-zinc-700 justify-center w-1/3" onclick="onClickDrop()">
+          <li class="flex hover:bg-zinc-700 justify-center w-1/3" onclick="onClickDrop1()">
             TECH<img class="scale-50" src="./img/expand.png" />
             <div
-              class="myDropDown absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7" 
+              class="dropdown dropbtn absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7 overflow-scroll "
+              id="dropdown1"
             >
-              <ul>
+              <ul class=" ">
                 <li class="p-2 border-b-2 border-b-zinc-700">Video</li>
                 <li class="p-2 border-b-2 border-b-zinc-700">Microsoft</li>
                 <li class="p-2 border-b-2 border-b-zinc-700">Cybersecurity</li>
@@ -190,11 +191,11 @@
             </div>
           </li>
           <li
-            class="flex hover:bg-zinc-700 w-1/3 justify-center border-l border-l-zinc-700" onclick="scrollStop()"
+            class="flex hover:bg-zinc-700 w-1/3 justify-center border-l border-l-zinc-700" onclick="onClickDrop2()"
           >
             SCIENCE<img class="scale-50" src="./img/expand.png" />
             <div
-              class="dropbtn absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7"
+              class="dropbtn dropdown absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7" id="dropdown2"
               >
               <ul>
                 <li class="p-2 border-b-2 border-b-zinc-700">Video</li>
@@ -209,43 +210,25 @@
             </div>
           </li>
           <li
-            class="flex hover:bg-zinc-700 w-1/3 justify-center border-l border-l-zinc-700" onclick="scrollStop()" 
+            class=" flex hover:bg-zinc-700 w-1/3 justify-center border-l border-l-zinc-700" onclick="onClickDrop3()" 
           >
             MORE<img class="scale-50" src="./img/expand.png" />
             <div
-              class="myDropDown absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7"
+              class="dropbtn dropdown absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7" id="dropdown3"
             >
               <ul>
                 <li
-                  class="p-2 border-b-2 border-b-zinc-700 "
-                >
-                  <div class="dropbtn flex place-items-center">REVIEWS<img class="scale-50" src="./img/expand.png" /></div>
-                  <div class="">
-                    <ul class="">
-                    <li class="p-2 border-b border-b-zinc-700">Phones</li>
-                    <li class="p-2 border-b border-b-zinc-700">Tablets</li>
-                    <li class="p-2 border-b border-b-zinc-700">Accessories</li>
-                    <li class="p-2 border-b border-b-zinc-700">Laptop</li>
-                    <li class="p-2 border-b border-b-zinc-700">Smartwatches</li>
-                    <li class="p-2 border-b border-b-zinc-700">Buying Guides</li>
-                    <li class="p-2 border-b border-b-zinc-700">Video</li>
-                    <li class="p-2 border-b border-b-zinc-700">Health</li>
-                    <li class="p-2 border-b border-b-zinc-700">Space</li>
-                    <li class="p-2 border-b border-b-zinc-700">Energy</li>
-                    <li class="p-2 border-b border-b-zinc-700">Nasa</li>
-                    <li class="p-2 border-b border-b-zinc-700">Environment</li>
-                    <li class="p-2 border-b border-b-zinc-700">spaceX</li>
-                    <li class="p-2 ">MORE FROM VERGE REVIEWS</li>
-                  </ul>
-                  </div>
-                </li>
+                class="flex p-2 border-b border-b-zinc-700 place-items-center"
+              >
+               REVIEWS<img class="scale-50" src="./img/expand.png" />
+              </li>
                 <li
                   class="flex p-2 border-b border-b-zinc-700 place-items-center"
                 >
                   CREATORS<img class="scale-50" src="./img/expand.png" />
                 </li>
                 <li
-                  class="flex p-2 border-b-2 border-b-zinc-700 place-items-center"
+                  class=" flex p-2 border-b-2 border-b-zinc-700 place-items-center"
                 >
                   ENTERTAINMENT<img class="scale-50" src="./img/expand.png" />
                 </li>
@@ -278,9 +261,9 @@
         <span class="text-xs before:content-['|']"> 34 COMMENTS</span>
       </div>
 
-      <div class="border border-pink-600 lg:w-1/3 sm:w-1/2 flex sm:block">
+      <div class="border border-pink-600 lg:w-1/3 sm:w-1/2 flex sm:block ">
         <img class="object-contain sm:w-full w-1/3" src="./img/netflix.webp" />
-        <div class="p-5">
+        <div class="p-5 border border-lime-400 border-l-0 sm:border-0">
           <p class="sm:text-lg font-bold hover:text-pink-600 text-sm w-1/2">
             Snaps chief business officer is leaving to run ads at Netflix
           </p>
@@ -291,9 +274,9 @@
         </div>
       </div>
 
-      <div class="border border-pink-600 lg:w-1/3 sm:w-1/2 flex sm:block">
+      <div class="border border-pink-600 lg:w-2/5 sm:w-1/2 flex sm:block">
         <img class="object-contain sm:w-full w-1/3" src="./img/trump.webp" />
-        <div class="p-5">
+        <div class="p-5 border border-lime-400 border-l-0 sm:border-0">
           <p class="text-lg font-bold hover:text-pink-600">
             Truth Social is strapped for cash and struggling to find new users
           </p>
@@ -303,10 +286,10 @@
         </div>
       </div>
       <div
-        class="flex lg:flex-wrap md:flex-wrap sm:flex-row flex-row-reverse flex-auto lg:w-2/3  sm:border-pink-600 sm:border-r"
+        class="flex lg:flex-wrap md:flex-wrap sm:flex-row flex-row-reverse flex-auto lg:w-3/5  sm:border-pink-600 sm:border-r"
       >
         <div
-          class="p-5 sm:w-1/2 lg:w-1/2 border border-pink-600 w-2/3 border-l-0"
+          class="p-5 sm:w-1/2 lg:w-1/2 border sm:border-pink-600 w-2/3 sm:border-r-0  border-lime-400 border-l-0 sm:border-0"
         >
           <p class="sm:text-5xl font-bold hover:text-pink-600 text-sm">
             HOW TWITTER’S CHILD PORN PROBLEM RUINED ITS PLANS FOR AN ONLY FANS
@@ -320,12 +303,12 @@
         <div
           class=" lg:w-1/2 sm:flex w-1/3 md:w-1/2"
         >
-          <img class="object-contain sm:w-full h-full border-l border-pink-700" src="./img/musk.webp" />
+          <img class="object-contain sm:w-full h-full border-l border-pink-700 sm:border-l-0" src="./img/twitter.webp"  />
         </div>
       </div>
       <div class="border border-pink-600 lg:w-1/3 sm:w-1/3 flex sm:block">
         <img class="object-contain sm:w-full w-1/3" src="./img/mouse.webp" />
-        <div class="p-5">
+        <div class="p-5 border border-lime-400 border-l-0 sm:border-0">
           <p class="text-lg font-bold hover:text-pink-600">
             Truth Social is strapped for cash and struggling to find new users
           </p>
@@ -336,7 +319,7 @@
       </div>
       <div class="border border-pink-600 lg:w-1/3 sm:w-1/3 flex sm:block">
         <img class="object-contain sm:w-full w-1/3" src="./img/mouse.webp" />
-        <div class="p-5">
+        <div class="p-5 border border-lime-400 border-l-0 sm:border-0">
           <p class="text-lg font-bold hover:text-pink-600">
             Truth Social is strapped for cash and struggling to find new users
           </p>
@@ -347,7 +330,7 @@
       </div>
       <div class="border border-pink-600 lg:w-1/3 sm:w-1/3 flex sm:block">
         <img class="object-contain sm:w-full w-1/3" src="./img/demand.webp" />
-        <div class="p-5">
+        <div class="p-5 border border-lime-400 border-l-0 sm:border-0">
           <p class="text-lg font-bold hover:text-pink-600">
             Truth Social is strapped for cash and struggling to find new users
           </p>
