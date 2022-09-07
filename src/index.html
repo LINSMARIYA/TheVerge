@@ -12,8 +12,8 @@
       class="md:bg-bw-pattern bg-cover bg-no-repeat md:h-72 flex md:items-center items-start flex-col p-5 md:p-10 bg-black"
     >
     <div class="flex w-full place-content-between sm:justify-center">
-      <img class="md:h-auto lg:max-h-40 h-8 w-1/2 left-0" src="../src/img/theverge.png" />
-      <img class="w-5 h-5 mx-2 hover:bg-zinc-800 sm:hidden right-0" src="./img/person.png" />
+      <img class="md:h-auto lg:max-h-40 h-8 w-1/2 left-0" src="../public/img/theverge.png" />
+      <img class="w-5 h-5 mx-2 hover:bg-zinc-800 sm:hidden right-0" src="../public/img/person.png" />
     </div>
       <p
         class="font-sans text-sm text-white text-center mt-5 hidden h-0 md:block md:h-auto"
@@ -27,7 +27,7 @@
       <div class="sm:flex border sm:border-b border-zinc-800 sm:justify-center hidden">
         <ul class="flex">
           <li class=" hover:bg-zinc-800 px-2 py-2 sm:flex hidden">
-            TECH <img class="scale-50" src="./img/expand.png" />
+            TECH <img class="scale-50" src="../public/img/expand.png" />
             <div
               class=" grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2 " 
             >
@@ -53,7 +53,7 @@
           <li
             class="px-2 py-2 hover:bg-zinc-800 sm:flex lg:flex md:flex hidden"
           >
-            REVIEWS <img class="scale-50" src="./img/expand.png" />
+            REVIEWS <img class="scale-50" src="../public/img/expand.png" />
             <div
               class="dropbtn grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2"
             >
@@ -75,7 +75,7 @@
             </div>
           </li>
           <li class="px-2 py-2 hover:bg-zinc-800 sm:flex hidden">
-            SCIENCE<img class="scale-50" src="./img/expand.png" />
+            SCIENCE<img class="scale-50" src="../public/img/expand.png" />
             <div
               class="dropbtn grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2"
             >
@@ -91,7 +91,7 @@
             </div>
           </li>
           <li class="px-2 py-2 hover:bg-zinc-800 sm:hidden md:flex hidden">
-            CREATORS <img class="scale-50" src="./img/expand.png" />
+            CREATORS <img class="scale-50" src="../public/img/expand.png" />
             <div
               class="dropbtn grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2"
             >
@@ -109,7 +109,7 @@
             </div>
           </li>
           <li class="px-2 py-2 hover:bg-zinc-800 sm:flex hidden">
-            ENTERTAINMENT<img class="scale-50" src="./img/expand.png" />
+            ENTERTAINMENT<img class="scale-50" src="../public/img/expand.png" />
             <div
               class="dropbtn grid grid-cols-3 gap-3 dropbtn bg-zinc-800 p-2 mt-9 absolute text-xs -ml-2"
             >
@@ -129,7 +129,7 @@
           <li class="px-2 py-2 lg:flex sm:hidden xl:block hidden">FEATURES</li>
           <li class="px-2 py-2 lg:flex sm:hidden xl:block hidden">PODCASTS</li>
           <li class="px-2 py-2 hover:bg-zinc-800 sm:flex hidden" >
-            MORE<img class="scale-50" src="./img/expand.png" />
+            MORE<img class="scale-50" src="../public/img/expand.png" />
             <div
               class="dropbtn grid grid-cols-1 gap-3 dropbtn bg-zinc-800 px-5 py-2 mt-9 absolute text-xs -ml-2"
             >
@@ -141,13 +141,13 @@
           </li>
         </ul>
         <ul class="flex-row items-center mr-5 sm:hidden lg:flex hidden">
-          <li><img class="w-4 mx-1" src="./img/icons8-facebook-f-24.png" /></li>
-          <li><img class="w-6 mx-1" src="./img/twitter.png" /></li>
-          <li><img class="w-4 mx-1" src="./img/rss.png" /></li>
+          <li><img class="w-4 mx-1" src="../public/img/icons8-facebook-f-24.png" /></li>
+          <li><img class="w-6 mx-1" src="../public/img/twitter.png" /></li>
+          <li><img class="w-4 mx-1" src="../public/img/rss.png" /></li>
         </ul>
         <ul class="items-center hover:bg-zinc-800 sm:hidden lg:flex hidden">
           <li class=" ">
-            <img class="w-4 mx-2 hover:bg-zinc-800" src="./img/person.png" />
+            <img class="w-4 mx-2 hover:bg-zinc-800" src="../public/img/person.png" />
             <div
               class="dropbtn grid grid-cols-1 gap-3 dropbtn bg-zinc-800 p-5 absolute text-xs -ml-20 mt-3"
             >
@@ -158,84 +158,84 @@
           </li>
         </ul>
         <ul class="items-center sm:hidden lg:flex hidden">
-          <li><img class="w-5 mx-2" src="./img/search.png" /></li>
+          <li><img class="w-5 mx-2" src="../public/img/search.png" /></li>
         </ul>
       </div>
 
       <div class="border-b-2 border-zinc-800 sm:hidden">
         <ul class="flex text-white">
           <li class="flex hover:bg-zinc-700 justify-center w-1/3" onclick="onClickDrop1()">
-            TECH<img class="scale-50" src="./img/expand.png" />
+            TECH<img class="scale-50" src="../public/img/expand.png" />
             <div
-              class="dropdown dropbtn absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7 overflow-scroll "
+              class="dropdown dropbtn absolute w-full bg-zinc-800 text-xs left-0 mt-7 h-[calc(100vh-101px)] overflow-scroll"
               id="dropdown1"
             >
-              <ul class=" ">
-                <li class="p-2 border-b-2 border-b-zinc-700">Video</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Microsoft</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Cybersecurity</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Amazon</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Samsung</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Mobile</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Apple</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Tesla</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Policy</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Facebook</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">AI</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Privacy</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Google</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Cars</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Scooters</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">ALL TECH</li>
+              <ul class="">
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Video</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Microsoft</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Cybersecurity</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Amazon</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Samsung</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Mobile</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Apple</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Tesla</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Policy</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Facebook</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">AI</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Privacy</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Google</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Cars</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Scooters</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">ALL TECH</li>
               </ul>
             </div>
           </li>
           <li
             class="flex hover:bg-zinc-700 w-1/3 justify-center border-l border-l-zinc-700" onclick="onClickDrop2()"
           >
-            SCIENCE<img class="scale-50" src="./img/expand.png" />
+            SCIENCE<img class="scale-50" src="../public/img/expand.png" />
             <div
               class="dropbtn dropdown absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7" id="dropdown2"
               >
               <ul>
-                <li class="p-2 border-b-2 border-b-zinc-700">Video</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Health</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Space</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Energy</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Nasa</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">Environment</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">spaceX</li>
-                <li class="p-2 border-b-2 border-b-zinc-700">ALL SCIENCE</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Video</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Health</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Space</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Energy</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Nasa</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">Environment</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">spaceX</li>
+                <li class="px-4 py-2 border-b-2 border-b-zinc-700">ALL SCIENCE</li>
               </ul>
             </div>
           </li>
           <li
             class=" flex hover:bg-zinc-700 w-1/3 justify-center border-l border-l-zinc-700" onclick="onClickDrop3()" 
           >
-            MORE<img class="scale-50" src="./img/expand.png" />
+            MORE<img class="scale-50" src="../public/img/expand.png" />
             <div
               class="dropbtn dropdown absolute h-full w-full bg-zinc-800 text-xs left-0 mt-7" id="dropdown3"
             >
               <ul>
                 <li
-                class="flex p-2 border-b border-b-zinc-700 place-items-center"
+                class="flex px-4 py-2 border-b border-b-zinc-700 place-items-center"
               >
-               REVIEWS<img class="scale-50" src="./img/expand.png" />
+               REVIEWS<img class="scale-50" src="../public/img/expand.png" />
               </li>
                 <li
-                  class="flex p-2 border-b border-b-zinc-700 place-items-center"
+                  class="flex px-4 py-2 border-b border-b-zinc-700 place-items-center"
                 >
-                  CREATORS<img class="scale-50" src="./img/expand.png" />
+                  CREATORS<img class="scale-50" src="../public/img/expand.png" />
                 </li>
                 <li
-                  class=" flex p-2 border-b-2 border-b-zinc-700 place-items-center"
+                  class=" flex px-4 py-2 border-b-2 border-b-zinc-700 place-items-center"
                 >
-                  ENTERTAINMENT<img class="scale-50" src="./img/expand.png" />
+                  ENTERTAINMENT<img class="scale-50" src="../public/img/expand.png" />
                 </li>
-                <li class="p-2 border-b border-b-zinc-700">FEATURES</li>
-                <li class="p-2 border-b border-b-zinc-700">PODCASTS</li>
-                <li class="p-2 border-b border-b-zinc-700">NEWSLETTERS</li>
-                <li class="p-2 border-b border-b-zinc-700">MERCH STORE</li>
+                <li class="px-4 py-2 border-b border-b-zinc-700">FEATURES</li>
+                <li class="px-4 py-2 border-b border-b-zinc-700">PODCASTS</li>
+                <li class="px-4 py-2 border-b border-b-zinc-700">NEWSLETTERS</li>
+                <li class="px-4 py-2 border-b border-b-zinc-700">MERCH STORE</li>
               </ul>
             </div>
           </li>
@@ -246,7 +246,7 @@
       class="xl:max-w-7xl text-white m-auto justify-center flex flex-wrap mt-20 sm:p-0 p-5"
     >
       <div class="lg:w-1/3 sm:w-1/2 border border-r-0 border-pink-700 w-1/2">
-        <img class="object-contain self-center" src="./img/meta.webp" />
+        <img class="object-contain self-center" src="../public/img/meta.webp" />
       </div>
 
       <div
@@ -262,7 +262,7 @@
       </div>
 
       <div class="border border-pink-600 lg:w-1/3 sm:w-1/2 flex sm:block ">
-        <img class="object-contain sm:w-full w-1/3" src="./img/netflix.webp" />
+        <img class="object-contain sm:w-full w-1/3" src="../public/img/netflix.webp" />
         <div class="p-5 border border-lime-400 border-l-0 sm:border-0">
           <p class="sm:text-lg font-bold hover:text-pink-600 text-sm w-1/2">
             Snaps chief business officer is leaving to run ads at Netflix
@@ -275,7 +275,7 @@
       </div>
 
       <div class="border border-pink-600 lg:w-2/5 sm:w-1/2 flex sm:block">
-        <img class="object-contain sm:w-full w-1/3" src="./img/trump.webp" />
+        <img class="object-contain sm:w-full w-1/3" src="../public/img/trump.webp" />
         <div class="p-5 border border-lime-400 border-l-0 sm:border-0">
           <p class="text-lg font-bold hover:text-pink-600">
             Truth Social is strapped for cash and struggling to find new users
@@ -303,11 +303,11 @@
         <div
           class=" lg:w-1/2 sm:flex w-1/3 md:w-1/2"
         >
-          <img class="object-contain sm:w-full h-full border-l border-pink-700 sm:border-l-0" src="./img/twitter.webp"  />
+          <img class="object-contain sm:w-full h-full border-l border-pink-700 sm:border-l-0" src="../public/img/twitter.webp"  />
         </div>
       </div>
       <div class="border border-pink-600 lg:w-1/3 sm:w-1/3 flex sm:block">
-        <img class="object-contain sm:w-full w-1/3" src="./img/mouse.webp" />
+        <img class="object-contain sm:w-full w-1/3" src="../public/img/mouse.webp" />
         <div class="p-5 border border-lime-400 border-l-0 sm:border-0">
           <p class="text-lg font-bold hover:text-pink-600">
             Truth Social is strapped for cash and struggling to find new users
@@ -318,7 +318,7 @@
         </div>
       </div>
       <div class="border border-pink-600 lg:w-1/3 sm:w-1/3 flex sm:block">
-        <img class="object-contain sm:w-full w-1/3" src="./img/mouse.webp" />
+        <img class="object-contain sm:w-full w-1/3" src="../public/img/mouse.webp" />
         <div class="p-5 border border-lime-400 border-l-0 sm:border-0">
           <p class="text-lg font-bold hover:text-pink-600">
             Truth Social is strapped for cash and struggling to find new users
@@ -329,7 +329,7 @@
         </div>
       </div>
       <div class="border border-pink-600 lg:w-1/3 sm:w-1/3 flex sm:block">
-        <img class="object-contain sm:w-full w-1/3" src="./img/demand.webp" />
+        <img class="object-contain sm:w-full w-1/3" src="../public/img/demand.webp" />
         <div class="p-5 border border-lime-400 border-l-0 sm:border-0">
           <p class="text-lg font-bold hover:text-pink-600">
             Truth Social is strapped for cash and struggling to find new users

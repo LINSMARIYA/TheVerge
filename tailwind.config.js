@@ -6,7 +6,7 @@ module.exports = {
     theme: {
       extend: {
         backgroundImage: {
-          'bw-pattern':"url('../src/img/bw.png')",
+          'bw-pattern':"url('../public/img/bw.png')",
        
         },
         backgroundSize: {
